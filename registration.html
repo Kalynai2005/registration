@@ -155,11 +155,16 @@
                 alert("Please enter Mobile Number");
                 return false;
             }
+            if(altmobile==""){
+                alert("please enter alter mobile Number");
+                return false;
+            }            
 
             if(isNaN(mobile) || mobile.length!=10){
                 alert("Enter valid 10 digit Mobile Number");
                 return false;
             }
+        
 
             if(dob==""){
                 alert("Please select Date of Birth");
@@ -231,6 +236,11 @@
 <div class="form-group">
 <label>Mobile Number</label>
 <input type="tel" id="mobile">
+</div>
+
+<div class="form-group">
+<label>Alter Mobile Number</label>
+<input type="tel" id="mobile>
 </div>
 
 <div class="form-group">
